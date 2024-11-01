@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Data Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="Adder.html" class="logo">16-bit Adder/Subtractor</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Main Page</a></li>
+							<li><a href="Data.html">Data Visualization</a></li>
+							<li><a href="Conway.html">Conway's Game of Life</a></li>
+                            <li class="active"><a href="Adder.html">16-bit Adder/Subtractor</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/angel-vidals-61b7a524b/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>16-bit Adder/Subtractor<br />
+									</h1>
+									<p>The below circuit diagram shows a 4-bit adder/subtractor. I implemented a 16-bit adder/subtractor using strucutral Verilog to carry out addition and subtraction with hexadecimal numbers (code available upon request).
+									</p>
+								</header>
+								<div class="image main"><img src="images/Adder1.jpg" alt="" /></div>
+								<p> 
+                                    The 16-bit adder/subtractor was implemented with Verilog HDL using a series of 16 1-bit full adder modules that are connected sequentially to process each bit of the inputs. 
+                                    The operation done was decided on by an opcode value. If the opcode was 0, then addition was done by simply adding the input values. If the opcode was 1, then the second value had its bits inverted and the carry-in was set to 1 to perform two's complement.
+                                    Each 1-bit full adder outputs a sum and a carry-out, which is fed into the next adder.
+                                    Functional and unit gate delay simulations were done to verify accuracy and timing behavior.
+                                </p>
+								<div class="image main"><img src="images/Adder2.jpg" alt="" /></div>
+                                <p> 
+                                    Above is a list of functional tests done. "a" and "b" are hexadecimal numbers, the operation is determined by the opcode (0 for addition and 1 for subtraction) and s represents the answer in hexadecimal. These results can be verified by a calculator.
+                                </p>
+							</section>
+					</div>
+						<footer id="footer">
+							<section class="split contact">
+								<section class="alt">
+									<h3>Location</h3>
+									<p>New York, NY</p>
+								</section>
+								<section>
+									<h3>Phone</h3>
+									<p>(401)-808-7078</p>
+								</section>
+								<section>
+									<h3>Email</h3>
+									<p>angelgvidals@gmail.com</p>
+								</section>
+								<section>
+									<h3>Social</h3>
+									<ul class="icons alt">
+										<li><a href="https://www.linkedin.com/in/angel-vidals-61b7a524b/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									</ul>
+								</section>
+							</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

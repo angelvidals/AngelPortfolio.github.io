@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+	
+<html>
+	<head>
+		<title>Data Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="Conway.html" class="logo">Conway's Game of Life</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Main Page</a></li>
+							<li><a href="Data.html">Data Visualization</a></li>
+							<li class="active"><a href="Conway.html">Conway's Game of Life</a></li>
+							<li><a href="Adder.html">16-bit Adder/Subtractor</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/angel-vidals-61b7a524b/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Simplified Version of Conway's Game of Life<br />
+									</h1>
+									<p>Given an input file that is a grid of live and dead cells, I designed an algorithm in C that would compute the n-th generation of the cells (code available upon request), according to the rules of Conway's Game of Life:
+										<ul>
+											<li> If a cell is alive and has fewer than 2 live neighbors, it dies. </li>
+											<li> If a cell is alive and has more than 3 live neighbors, it dies.</li>
+											<li> If a cell is alive and has exactly 2 or 3 live neighbors, it remains alive.</li>
+											<li> If a cell is dead and has exactly 3 live neighbors, it becomes alive.</li>
+										</ul>
+									</p>
+								</header>
+								<div class="image main"><img src="images/ConwayInput.jpg" alt="" /></div>
+								<p>Above is an input file (starting generation). The algorithm uses a 3D array to alternate between the current generation and the next generation. The next generation is computed by analyzing the current generation and getting the live and dead neighbors of each cell in the grid to determine if a specific cell should be dead or alive in the next generation. It continues this process until it has reached the goal generation.</p>
+								<div class="image fit"><img src="images/ConwayOutput.jpg" alt="" /></div>
+								<p>Above is the 50th generation of the input file. This solution can be verified by playing Conway's Game of Life on the <a href="https://playgameoflife.com/lexicon/Gosper_glider_gun">official website.</a>
+								</p>
+							</section>
+					</div>
+						<footer id="footer">
+							<section class="split contact">
+								<section class="alt">
+									<h3>Location</h3>
+									<p>New York, NY</p>
+								</section>
+								<section>
+									<h3>Phone</h3>
+									<p>(401)-808-7078</p>
+								</section>
+								<section>
+									<h3>Email</h3>
+									<p>angelgvidals@gmail.com</p>
+								</section>
+								<section>
+									<h3>Social</h3>
+									<ul class="icons alt">
+										<li><a href="https://www.linkedin.com/in/angel-vidals-61b7a524b/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									</ul>
+								</section>
+							</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
